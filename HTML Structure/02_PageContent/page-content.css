@@ -1,0 +1,22 @@
+h1 {
+    size: 28px;
+}
+
+p {
+    size: 24px;
+}
+
+.italic-paragraph {
+    font-style: italic;
+}
+
+section {
+    margin-left: 20px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+}
+
