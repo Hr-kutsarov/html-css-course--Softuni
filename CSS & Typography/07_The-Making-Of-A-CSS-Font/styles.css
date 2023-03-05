@@ -1,1 +1,132 @@
-/* TODO: style the html */
+/* TODO: style the html 
+    <div class="grid-system">
+      <div class="sidebar"></div>
+      <div class="main-container">
+        <div class="content-block small"></div>
+        <div class="content-block big">
+          <div class="content-block-title-container"></div>
+          <article>
+            <h1>The Making of a CSS Font</h1>
+            <h2>How it works</h2>
+            <p>
+              This is a hybrid of web and font design. Each character is built
+              like any web element and used inline to behave like a font.
+              Metrics, Weights, OpenType Features and all the other font
+              properties are controlled exclusively with the CSS file.
+            </p>
+            <p>
+              The font design is based on the border width of the elements,
+              which makes it extremely versatile. With the exemption of script
+              fonts, several styles and weights can result just from border
+              variations, using the same shape. On more complex characters the
+              clip-path and the background is used to create the cutout effect.
+            </p>
+          </article>*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: SSP;
+  src: url("./SourceSansPro-Regular.ttf");
+}
+
+:root {
+  --background-color: rgb(134, 134, 134);
+  --sidebar-color: rgb(238, 238, 238);
+  --article-content-color: rgb(252, 252, 252);
+  --footer-color: rgb(39, 39, 39);
+}
+.grid-system {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+footer {
+  height: 200px;
+  background-color: var(--footer-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--article-content-color);
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+}
+
+.main-container {
+  background-color: #ffa;
+  font-family: SSP, sans-serif;
+  font-size: 16px;
+}
+
+.content-block {
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: center;
+}
+
+article {
+  margin-top: 2rem;
+  background-color: var(--article-content-color);
+  border: 1px solid rgb(114, 114, 114);
+  display: block;
+  max-width: 1200px;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 4rem;
+  margin: 2rem;
+}
+
+article > h1 {
+  display: block;
+  background-color: #d6d6d6;
+  color: #2b2b2b;
+  border-radius: 0;
+  padding: 1rem 3rem 1rem 2rem;
+}
+
+article > h2 {
+  display: block;
+  background-color: #acc;
+  border-radius: 0;
+  padding: 1rem 3rem 1rem 2rem;
+}
+
+article > p {
+  padding: 0 1rem 1rem 1rem;
+  margin: 2rem 2rem 0rem 2rem;
+}
+
+.sidebar {
+  padding: 2rem;
+  line-height: 1.5rem;
+  font-family: SSP;
+  font-weight: 300;
+}
+
+.sidebar > ul {
+  margin-bottom: 2rem;
+}
+
+li {
+  list-style-type: none;
+  margin: 0.5rem;
+}
+
+.sep {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.2);
+  height: 2px;
+  margin-bottom: 1rem;
+}
