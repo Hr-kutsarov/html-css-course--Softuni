@@ -17,15 +17,12 @@ body {
   font-family: "SourceSans-Regular", sans-serif;
   font-size: 16px;
   line-height: 1.5rem;
+  background-color: #fff;
 }
-/* garbage code below*/
-img {
-  max-width: 160px;
-}
-/* garbage code above*/
 
 /* HEADER SECTION HERE */
 
+/* set-up a background image */
 .header {
   background-image: url("./images/landing-photo.jpg");
   background-position: center;
@@ -39,6 +36,7 @@ img {
   /* separate the logo and the menu buttons */
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 .menu {
@@ -50,32 +48,41 @@ img {
   margin: 0 15vw;
 }
 
+/* header content-box -move it down from the menu
+and up from the border */
 .article-explore-places {
   padding: 6rem 0;
 }
 
+/* hero main title */
 .article-explore-places > h1 {
   margin: 1rem;
   font-size: 3rem;
 }
 
+/* hero secondary title */
+
 .article-explore-places > h2 {
-  margin: 1rem 1.1rem;
-  font-size: 1.25rem;
-  font-weight: 700;
+  margin: 2rem 1rem;
+  font-size: 2rem;
 }
 
+/* hero paragraph */
 .article-explore-places > p {
-  margin: 0 1rem;
+  margin: 0 1.2rem;
+  font-size: 1.2rem;
 }
 
+/* hero button */
 #explore-homes {
   color: white;
   background-color: var(--button-color);
-  margin: 1rem 1.1rem;
-  padding: 1rem 1.5rem;
+  margin: 1rem 1.3rem;
+  padding: 0.7rem 4rem;
+  font-size: 1.2rem;
 }
 
+/* logo button */
 #travel-logo {
   color: rgb(0, 0, 0);
   padding: 1rem;
@@ -84,16 +91,92 @@ img {
   align-items: center;
 }
 
-button {
-  margin: 1rem 0;
+/* button shenenigans */
+.menu > button,
+.article-explore-places > button {
   padding: 0.5rem 1rem;
   background-color: transparent;
   border: none;
   border-radius: 20px;
   color: var(--button-color);
+  font-size: 0.8rem;
 }
 
-button:hover {
+.menu > button:hover {
   background-color: var(--button-color);
   color: whitesmoke;
+}
+
+/* ========= MAIN SECTION =========*/
+
+.welcome-section {
+  display: block;
+  background-color: #faf;
+  margin: 0 15vw 0 15vw;
+}
+
+.places-flex-cards {
+  background-color: #ffa;
+  margin: 0 15vw 0 15vw;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 33%));
+}
+
+.places-flex-cards > article {
+  margin: 2rem;
+}
+
+.places-flex-cards > article > figure {
+  margin: 2rem;
+}
+
+img {
+  max-width: 160px;
+}
+
+/* ========= FOOTER SECTION ========= */
+
+footer {
+  background-color: rgb(0, 0, 0);
+}
+.footer-box {
+  margin: 0 15vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.links-bottom-right-box > ul > li,
+.links-bottom-left-box > ul > li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.images-box-inline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.images-box-inline > figure > img {
+  margin: 0.5rem 0;
+  max-width: 24px;
+}
+
+.travel-box > h1,
+.follow-us-box > h5 {
+  color: white;
+}
+
+.travel-box > h1 {
+  margin-left: 2rem;
+}
+
+.follow-us-box {
+  margin-right: 2rem;
 }
