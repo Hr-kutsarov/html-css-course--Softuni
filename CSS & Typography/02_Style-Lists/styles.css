@@ -1,1 +1,90 @@
-/* TODO: style the html */
+/* TODO: style the html 
+    •	<body>:
+        o	Font: Helvetica
+        o	Generic Font: sans-serif
+        o	Height of the line: 1.5
+        o	Font size: 18px
+        o	Background color: #EDEDED
+    •	<h2>:
+        o	Decorate the text with underline
+        o	Paddings: 20px
+        o	Top & bottom margin 10px
+        o	Left & right margin 5px
+        o	Space between letters: 3px
+        o	Background color: #3B516B
+        o	Radius of the border: 10px
+        o	Text color: floralwhite
+    •	<li>:
+        o	Left margin: 20px
+
+
+        Reset CSS ...
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* reset complete. */
+
+@font-face {
+  font-family: Roboto;
+  src: url("Roboto-Light.ttf");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.products-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-image: linear-gradient(#ffffff, #dad9d9);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.product-view {
+  flex-flow: row wrap;
+  max-width: 300px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.product-name {
+  color: #1a1a1a;
+  font-weight: 600;
+  border-radius: 10px, 10px, 0, 0;
+}
+
+.product-properties {
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.product-property {
+  margin: 0.5rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: #ffffff;
+  border: 0;
+  height: 60px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+  border-radius: 0 0 10px 10px;
+  background-image: linear-gradient(hsl(167, 39%, 52%), hsl(178, 39%, 52%));
+}

@@ -1,1 +1,87 @@
-/* TODO: style the html */
+/* 
+    Requirements
+    You will be given a skeleton with filled HTML and an empty CSS file. Write the missing CSS following the guidelines in the task.
+    •	<body>:
+    o	Font: Helvetica
+    o	Generic Font: sans-serif
+    o	Height of the line: 1.5
+    o	Font size: 18px
+    o	Background color: white
+    •	<article>:
+    o	Margins: 54px
+    o	Paddings: 36px
+    o	Set the border radius to 16px
+    o	Text color: white
+    o	Indent text in the first line 40px
+    o	Background color: rgb(51, 102, 153)
+    •	<h1>:
+    o	Font: Georgia
+    o	Generic Font: serif
+*/
+
+@font-face {
+  font-family: Source-sans-pro;
+  src: url(./SourceSansPro-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  font-family: "Source-sans-pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  word-spacing: auto;
+  line-height: 1.25rem;
+  color: hsl(0, 0%, 100%);
+  /* NON text attributes after this */
+  display: block;
+  background-image: radial-gradient(hsl(210, 50%, 50%), hsl(210, 50%, 40%));
+  max-width: 450px;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+/* style box */
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+p {
+  margin: 2rem 1rem 1rem 1rem;
+  /* only text attributes after this comment*/
+  font-size: 20px;
+}
+
+h1 {
+  margin: 2rem;
+  /* only text attributes after this comment*/
+  font-size: 3rem;
+  /* how to add shadow to text */
+  text-shadow: 0.4rem 0.4rem 0 rgb(17, 17, 17, 0.2);
+}
+
+.fa-solid {
+  height: 2rem;
+  width: 2rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+img {
+  justify-content: center;
+  max-width: 3rem;
+  margin-right: 1rem;
+}

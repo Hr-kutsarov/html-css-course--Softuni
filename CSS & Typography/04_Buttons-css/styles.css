@@ -1,0 +1,107 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  background-color: ghostwhite;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.one {
+  grid-column: 2 / 3;
+  /* background-color: #aff; */
+}
+
+.two {
+  grid-column: 3 / 4;
+  /* background-color: #faf; */
+}
+
+.three {
+  grid-column: 4 / 5;
+  /* background-color: #ffa; */
+}
+
+section {
+  height: 100vh;
+  padding: 2rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 1rem;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border: 4px solid whitesmoke;
+}
+
+a,
+button {
+  height: 45px;
+  margin-top: 24px;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover,
+a:hover {
+  background-color: transparent;
+  color: black;
+  border: 2px solid black;
+}
+
+.massive-title {
+  background-color: rgb(59, 59, 59);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 20vh;
+  position: fixed;
+}
+
+aside > h1 {
+  font-weight: 300;
+  color: rgb(141, 141, 141);
+  font-style: italic;
+}
+aside > ul > li {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 35px;
+  color: rgb(141, 141, 141);
+  text-shadow: 55px;
+  list-style-type: none;
+}
