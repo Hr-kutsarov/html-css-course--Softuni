@@ -41,7 +41,6 @@ footer > p {
 }
 
 .main-container {
-  background-color: #ffa;
   font-family: SSP, sans-serif;
   font-size: 16px;
 }
@@ -76,6 +75,7 @@ article > h2 {
   background-color: #acc;
   border-radius: 0;
   padding: 1rem 3rem 1rem 2rem;
+  cursor: pointer;
 }
 
 article > p {
@@ -97,6 +97,12 @@ article > p {
 li {
   list-style-type: none;
   margin: 0.5rem;
+  transition: background 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+  color: rgb(190, 43, 43);
 }
 
 .sep {

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: SourceSans-Regular;
+  src: url("./Fonts/SourceSansPro-Regular.ttf");
+}
+
+:root {
+  --image-hero-background: url("./images/landing-photo.jpg");
+}
+
+body {
+  font-family: "SourceSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+/* garbage code below*/
+img {
+  max-width: 160px;
+}
+/* garbage code above*/
