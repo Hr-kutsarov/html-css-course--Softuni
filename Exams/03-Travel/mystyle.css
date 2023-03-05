@@ -10,15 +10,90 @@
 
 :root {
   --image-hero-background: url("./images/landing-photo.jpg");
+  --button-color: #370511;
 }
 
 body {
   font-family: "SourceSans-Regular", sans-serif;
   font-size: 16px;
-  line-height: 1.25rem;
+  line-height: 1.5rem;
 }
 /* garbage code below*/
 img {
   max-width: 160px;
 }
 /* garbage code above*/
+
+/* HEADER SECTION HERE */
+
+.header {
+  background-image: url("./images/landing-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-menu {
+  margin: 0 15vw 0 15vw;
+  /* separate the logo and the menu buttons */
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  /* put all menu buttons on the same line */
+  display: inline;
+  margin: 0.5rem;
+}
+.hero-content-box {
+  margin: 0 15vw;
+}
+
+.article-explore-places {
+  padding: 6rem 0;
+}
+
+.article-explore-places > h1 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.article-explore-places > h2 {
+  margin: 1rem 1.1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.article-explore-places > p {
+  margin: 0 1rem;
+}
+
+#explore-homes {
+  color: white;
+  background-color: var(--button-color);
+  margin: 1rem 1.1rem;
+  padding: 1rem 1.5rem;
+}
+
+#travel-logo {
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  color: var(--button-color);
+}
+
+button:hover {
+  background-color: var(--button-color);
+  color: whitesmoke;
+}

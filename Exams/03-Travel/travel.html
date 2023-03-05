@@ -9,99 +9,122 @@
     <script src="App.js"></script>
   </head>
   <body>
-    <hero>
-      <heading>
-        <h2>Travel</h1>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Tour Packages</li>
-          <li>Contact</li>
-          <li>Explore places</li>
-        </ul>
-      </heading>
-      <article>
-        <h1>Book an exclusive</h1>
-        <h2>home for your personal travel</h2>
-        <p>
-          Each property is hand-picked, personally visited and cannot be found
-          elsewhere.
-        </p>
-        <button>Explore homes</button>
-      </article>
-    </hero>
+    <div class="header">
+      <div class="hero-menu">
+        <h1 id="travel-logo">Travel</h1>
+        <div class="menu">
+          <button id="home">Home</button>
+          <button id="about">About</button>
+          <button id="tour-packages">Tour Packages</button>
+          <button id="contact">Contact</button>
+          <button id="explore-places">Explore places</button>
+        </div>
+      </div>
+      <div class="hero-content-box">
+        <article class="article-explore-places">
+          <h1>Book an exclusive</h1>
+          <h2>home for your personal travel</h2>
+          <p>Each property is hand-picked,</p>
+          <p>personally visited and cannot be found elsewhere.</p>
+          <button id="explore-homes">Explore homes</button>
+        </article>
+      </div>
+    </div>
     <main>
+      <div class="welcome-section">
         <h1>Most famous places</h1>
         <h2>Recommended</h2>
-      <article>
-        <figure>
-          <img src="./images/London.jpg" alt="London" />
-        </figure>
-        <h3>London</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-        <button>Discover place</button>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Rome.jpg" alt="Rome" />
-        </figure>
-        <h3>London</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-        <button>Discover place</button>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Cluj-Napoca.jpg" alt="Cluj-Napoca" />
-        </figure>
-        <h3>London</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-        <button>Discover place</button>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Paris.jpg" alt="Paris" />
-        </figure>
-        <h3>London</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-        <button>Discover place</button>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Amsterdam.jpg" alt="Amsterdam" />
-        </figure>
-        <h3>London</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-        <button>Discover place</button>
-      </article>
-      <article>
-        <figure>
-          <img src="./images/Barcelona.jpg" alt="Barcelona" />
-        </figure>
-        <h3>London</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
-        </p>
-        <button>Discover place</button>
-      </article>
+      </div>
+      <div class="places-flex-cards">
+        <article>
+          <figure>
+            <img src="./images/London.jpg" alt="London" />
+          </figure>
+          <h3>London</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <button>Discover place</button>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/Rome.jpg" alt="Rome" />
+          </figure>
+          <h3>London</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <button>Discover place</button>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/Cluj-Napoca.jpg" alt="Cluj-Napoca" />
+          </figure>
+          <h3>London</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <button>Discover place</button>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/Paris.jpg" alt="Paris" />
+          </figure>
+          <h3>London</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <button>Discover place</button>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/Amsterdam.jpg" alt="Amsterdam" />
+          </figure>
+          <h3>London</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <button>Discover place</button>
+        </article>
+        <article>
+          <figure>
+            <img src="./images/Barcelona.jpg" alt="Barcelona" />
+          </figure>
+          <h3>London</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna.
+          </p>
+          <button>Discover place</button>
+        </article>
+      </div>
     </main>
     <footer>
-      <h1>Travel</h1>
-      <ul>
-        <li>Tour packages</li>
-        <li>Personalized offers</li>
-        <li>Special deals</li>
-        <li>Summer holiday</li>
-      </ul>
-      <ul>
-        <li>About us</li>
-        <li>FAQ</li>
-        <li>Terms and conditions</li>
-        <li>Contact</li>
-      </ul>
+      <div class="travel-box">
+        <h1>Travel</h1>
+      </div>
+      <div class="links-bottom-left-box">
+        <ul>
+          <li>Tour packages</li>
+          <li>Personalized offers</li>
+          <li>Special deals</li>
+          <li>Summer holiday</li>
+        </ul>
+      </div>
+
+      <div class="links-bottom-right-box">
+        <ul>
+          <li>About us</li>
+          <li>FAQ</li>
+          <li>Terms and conditions</li>
+          <li>Contact</li>
+        </ul>
+      </div>
       <div class="follow-us-box">
         <h5>Follow us on</h5>
         <figure>
