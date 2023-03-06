@@ -8,13 +8,18 @@
   src: url("./Fonts/SourceSansPro-Regular.ttf");
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins");
+}
+
 :root {
   --image-hero-background: url("./images/landing-photo.jpg");
   --button-color: #370511;
 }
 
 body {
-  font-family: "SourceSans-Regular", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5rem;
   background-color: #fff;
@@ -110,9 +115,12 @@ and up from the border */
 /* ========= MAIN SECTION =========*/
 
 .welcome-section {
-  display: block;
-  background-color: #faf;
-  margin: 0 15vw 0 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  margin: 2rem 15vw;
+  padding: 1rem;
 }
 
 .places-flex-cards {
