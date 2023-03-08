@@ -8,18 +8,13 @@
   src: url("./Fonts/SourceSansPro-Regular.ttf");
 }
 
-@font-face {
-  font-family: Poppins;
-  src: url("https://fonts.googleapis.com/css2?family=Poppins");
-}
-
 :root {
   --image-hero-background: url("./images/landing-photo.jpg");
   --button-color: #370511;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "SourceSans-Regular", sans-serif;
   font-size: 16px;
   line-height: 1.5rem;
   background-color: #fff;
@@ -42,12 +37,18 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 .menu {
   /* put all menu buttons on the same line */
-  display: inline;
+  display: flex;
   margin: 0.5rem;
+  align-items: center;
+}
+
+.menu > button {
+  margin: 0 0.2rem;
 }
 .hero-content-box {
   margin: 0 15vw;
@@ -119,12 +120,19 @@ and up from the border */
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  margin: 2rem 15vw;
+  margin: 2rem 15vw 0 15vw;
   padding: 1rem;
 }
 
+.welcome-section > h1 {
+  margin: 1rem 0;
+}
+
+.welcome-section > h2 {
+  color: lightslategray;
+}
 .places-flex-cards {
-  background-color: #ffa;
+  background-color: transparent;
   margin: 0 15vw 0 15vw;
 
   display: grid;
@@ -133,14 +141,6 @@ and up from the border */
 
 .places-flex-cards > article {
   margin: 2rem;
-}
-
-.places-flex-cards > article > figure {
-  margin: 2rem;
-}
-
-img {
-  max-width: 160px;
 }
 
 /* ========= FOOTER SECTION ========= */
@@ -171,10 +171,10 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.images-box-inline > figure > img {
+/* .images-box-inline > figure > img {
   margin: 0.5rem 0;
   max-width: 24px;
-}
+} */
 
 .travel-box > h1,
 .follow-us-box > h5 {
@@ -187,4 +187,52 @@ footer {
 
 .follow-us-box {
   margin-right: 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.img-container {
+  height: 20rem;
+}
+
+.content-container > p {
+  margin: 1rem 0;
+}
+
+.content-container > button {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+
+.content-container > button:hover {
+  padding: 1rem 2rem;
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 2rem;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.content-container > h3 {
+  display: flex;
+  margin: auto;
+}
+
+.images-box-inline {
+  margin-top: 1rem;
+  max-width: 90px;
 }
